@@ -85,6 +85,10 @@ kotlin {
 
             // Coroutines
             implementation(libs.kotlinx.coroutines.core)
+
+            // Material icons
+            implementation(libs.androidx.material.icons.core)
+            implementation(libs.androidx.material.icons.extended)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

@@ -56,7 +56,7 @@ fun Home() {
 
     Column {
         Text(
-            "Product",
+            "School",
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(8.dp)
         )
