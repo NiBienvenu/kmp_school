@@ -1,14 +1,12 @@
-package org.nibienvenu.school.presentation.viewmodel
+package org.nibienvenu.school.presentation.screens
 
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
@@ -25,10 +23,9 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kotlinx.coroutines.flow.StateFlow
 import org.nibienvenu.school.presentation.composents.VisibilityIcon
-import org.nibienvenu.school.presentation.screens.LoginUiState
-import org.nibienvenu.school.presentation.screens.LoginViewModel
+import org.nibienvenu.school.presentation.viewmodel.LoginUiState
+import org.nibienvenu.school.presentation.viewmodel.LoginViewModel
 
 
 @OptIn(ExperimentalComposeUiApi::class)

@@ -3,10 +3,11 @@ package org.nibienvenu.school.data.repository
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import org.nibienvenu.school.data.local.SimpleSessionManager
 import org.nibienvenu.school.data.remote.KtorAuthClient
 import org.nibienvenu.school.domain.models.User
 
-class AuthRepository(private val authClient: KtorAuthClient) {
+class AuthRepository(private val authClient: KtorAuthClient, sessionManager: SimpleSessionManager) {
 
     private var currentUser: User? = null
 

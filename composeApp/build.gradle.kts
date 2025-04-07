@@ -58,10 +58,10 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
-
-            implementation(libs.ktor.client.android)
-            implementation(libs.androidx.activity.compose.v180)
-            implementation(libs.androidx.appcompat.v161)
+//
+//            implementation(libs.ktor.client.android)
+//            implementation(libs.androidx.activity.compose.v180)
+//            implementation(libs.androidx.appcompat.v161)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -87,14 +87,13 @@ kotlin {
             implementation(libs.kotlinx.coroutines.core)
 
             // Material icons
-            implementation(libs.androidx.material.icons.core)
-            implementation(libs.androidx.material.icons.extended)
+
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
 
-            implementation(libs.ktor.client.cio)
+
         }
     }
 }
