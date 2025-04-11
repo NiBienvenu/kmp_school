@@ -1,6 +1,7 @@
 
 package org.nibienvenu.school.data.remote
 
+
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.contentnegotiation.*
@@ -11,9 +12,11 @@ import kotlinx.serialization.json.Json
 import org.nibienvenu.school.domain.models.LoginRequest
 import org.nibienvenu.school.domain.models.LoginResponse
 
+
 class KtorAuthClient(private val baseUrl: String) {
 
-    private val client = HttpClient {
+//    private val client = HttpClient()
+        private val client = HttpClient() {
         install(ContentNegotiation) {
             json(Json {
                 ignoreUnknownKeys = true
